@@ -4,7 +4,7 @@ metadata:
   name: manohar
   labels:
     app: manohar
-    env: app
+    env: dev
     release: v1.1
 spec:
     containers:     
@@ -22,7 +22,7 @@ metadata:
   name: mahesh
   labels:
     app: mahesh 
-    env: web
+    env: qa
     release: v1.1 
 spec:
   containers:
