@@ -1,0 +1,52 @@
+apiversion: v1
+kind: pod 
+metadata: 
+  name: manohar
+  labels:
+    name: romanreings
+    env: app
+    release: v1.1
+spec:
+    containers:     
+      - name: manohar
+        image: nginx:1.25
+        ports:
+          - containerport: 80
+            protocol: TCP
+
+       
+---
+apiversion: v1
+kind: pod
+metadata:
+  name: mahesh
+  labels:
+    name: solosoika 
+    env: web
+    release: v1.1 
+spec:
+  containers:
+    - name: mahesh
+        image: nginx:1.25
+        ports:
+          - containerport: 80
+            protocol: TCP
+
+
+---
+
+apiversion: v1
+kind: pod
+metadata:
+  name: nagasai
+  labels:
+    name: solosoika 
+    env: web
+    release: v1.1 
+spec:
+  containers:
+    - name: nagasai
+        image: nginx:1.25
+        ports:
+          - containerport: 80
+            protocol: TCP
