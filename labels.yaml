@@ -3,7 +3,7 @@ kind: pod
 metadata: 
   name: manohar
   labels:
-    name: romanreings
+    app: manohar
     env: app
     release: v1.1
 spec:
@@ -21,7 +21,7 @@ kind: pod
 metadata:
   name: mahesh
   labels:
-    name: solosoika 
+    app:mahesh 
     env: web
     release: v1.1 
 spec:
@@ -40,8 +40,8 @@ kind: pod
 metadata:
   name: nagasai
   labels:
-    name: solosoika 
-    env: web
+    app: nagasai
+    env: uat
     release: v1.1 
 spec:
   containers:
