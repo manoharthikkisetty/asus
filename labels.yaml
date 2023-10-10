@@ -4,7 +4,7 @@ kind: pod
 metadata: 
   name: manohar
   labels:
-    app: manohar
+    app: manohar-pod-labels1
     env: dev
     release: v1.1
 spec:
@@ -22,7 +22,7 @@ kind: pod
 metadata:
   name: mahesh
   labels:
-    app: mahesh 
+    app:  manohar-pod-labels2
     env: qa
     release: v1.1 
 spec:
@@ -41,7 +41,7 @@ kind: pod
 metadata:
   name: nagasai
   labels:
-    app: nagasai
+    app: manohar-pod-labels3
     env: uat
     release: v1.1 
 spec:
