@@ -16,38 +16,3 @@ spec:
           protocol: TCP
 
        
----
-apiVersion: v1
-kind: pod
-metadata:
-  name: mahesh
-  labels:
-    app:  manohar-pod-labels2
-    env: qa
-    release: v1.1 
-spec:
-  containers:
-    - name: mahesh
-        image: nginx:1.25
-        ports:
-          - containerport: 80
-            protocol: TCP
-
-
----
-
-apiVersion: v1
-kind: pod
-metadata:
-  name: nagasai
-  labels:
-    app: manohar-pod-labels3
-    env: uat
-    release: v1.1 
-spec:
-  containers:
-    - name: nagsai
-        image: nginx:1.25
-        ports:
-          - containerport: 80
-            protocol: TCP
