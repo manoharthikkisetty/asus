@@ -8,12 +8,12 @@ metadata:
     env: dev
     release: v1.1
 spec:
-    containers:     
-      - name: manohar
-        image: nginx:1.25
-        ports:
-          - containerport: 80
-            protocol: TCP
+  containers:     
+    - name: manohar
+      image: nginx:1.25
+      ports:
+        - containerport: 80
+          protocol: TCP
 
        
 ---
