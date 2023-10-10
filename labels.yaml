@@ -1,4 +1,4 @@
-apiversion: v1
+apiVersion: v1
 kind: pod 
 metadata: 
   name: manohar
@@ -16,12 +16,12 @@ spec:
 
        
 ---
-apiversion: v1
+apiVersion: v1
 kind: pod
 metadata:
   name: mahesh
   labels:
-    app:mahesh 
+    app: mahesh 
     env: web
     release: v1.1 
 spec:
@@ -35,7 +35,7 @@ spec:
 
 ---
 
-apiversion: v1
+apiVersion: v1
 kind: pod
 metadata:
   name: nagasai
