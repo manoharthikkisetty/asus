@@ -4,9 +4,7 @@ kind: pod
 metadata: 
   name: manohar
   labels:
-    app: nginx
-    env: dev
-    release: v1.1
+    app: nginx    
 spec:
   - containers:
       name: pspk
