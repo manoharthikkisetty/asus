@@ -16,7 +16,7 @@
             protocol: TCP 
 
 --- 
- apiVersion: v1
+  apiVersion: v1
   kind: Pod
   metadata:
     name: manohar
@@ -33,7 +33,7 @@
             protocol: TCP  
 
 --- 
- apiVersion: v1
+  apiVersion: v1
   kind: Pod
   metadata:
     name: manohar
