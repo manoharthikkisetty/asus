@@ -1,16 +1,16 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: manohar
-  labels:
-    app: manohar
-spec:
-  containers:
-    - name: pspk
-      image: nginx
-      ports:
-        - containerPort: 80
-          protocol: TCP
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: manohar
+#   labels:
+#     app: manohar
+# spec:
+#   containers:
+#     - name: pspk
+#       image: nginx
+#       ports:
+#         - containerPort: 80
+#           protocol: TCP
             
 
 
