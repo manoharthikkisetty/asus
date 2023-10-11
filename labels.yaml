@@ -11,18 +11,20 @@ spec:
       ports:
         - containerPort: 80
           protocol: TCP
+            
 
- ---
- apiVersion: v1
-kind: Pod
-metadata:
-  name: manohar
-  labels:
-    app: mahesh
-spec:
-  containers:
-    - name: pspk
-      image: nginx:1.25
-      ports:
-        - containerPort: 80
-          protocol: TCP         
+
+---
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: manohar
+    labels:
+      app: manohar
+  spec:
+    containers:
+      - name: pspk
+        image: nginx:1.25
+        ports:
+          - containerPort: 80
+            protocol: TCP
