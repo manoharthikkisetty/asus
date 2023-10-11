@@ -5,6 +5,8 @@
     name: manohar
     labels:
       app: manohar
+      env: dev
+      release: v1.1
   spec:
     containers:
       - name: pspk
