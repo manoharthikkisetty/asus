@@ -24,7 +24,7 @@ spec:
   spec:
     containers:
       - name: pspk
-        image: nginx:1.25
+        image: nginx1.25
         ports:
           - containerPort: 80
             protocol: TCP
