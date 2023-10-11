@@ -2,9 +2,9 @@
   apiVersion: v1
   kind: Pod
   metadata:
-    name: manohar
+    name: karthik
     labels:
-      app: mahesh
+      app: karthik
       env: dev
       release: v1.1
   spec:
@@ -19,9 +19,9 @@
   apiVersion: v1
   kind: Pod
   metadata:
-    name: manohar
+    name: nagasai
     labels:
-      app: pavankalayan
+      app: nagasai
       env: dev
       release: v1.1
   spec:
@@ -36,9 +36,9 @@
   apiVersion: v1
   kind: Pod
   metadata:
-    name: manohar
+    name: man
     labels:
-      app: ram
+      app: man
       env: dev
       release: v1.1
   spec:
