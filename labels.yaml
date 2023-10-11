@@ -4,7 +4,41 @@
   metadata:
     name: manohar
     labels:
-      app: manohar
+      app: mahesh
+      env: dev
+      release: v1.1
+  spec:
+    containers:
+      - name: pspk
+        image: nginx:1.25
+        ports:
+          - containerPort: 80
+            protocol: TCP 
+
+--- 
+apiVersion: v1
+  kind: Pod
+  metadata:
+    name: manohar
+    labels:
+      app: pavankalayan
+      env: dev
+      release: v1.1
+  spec:
+    containers:
+      - name: pspk
+        image: nginx:1.25
+        ports:
+          - containerPort: 80
+            protocol: TCP  
+
+--- 
+apiVersion: v1
+  kind: Pod
+  metadata:
+    name: manohar
+    labels:
+      app: ram
       env: dev
       release: v1.1
   spec:
