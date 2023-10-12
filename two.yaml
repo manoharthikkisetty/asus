@@ -12,6 +12,6 @@ spec:
           protocol: TCP
     - name: babu
       image: alpine
-          args:
-            - sleep
-            - 1day  
+      args:
+        - sleep
+        - 1d  
