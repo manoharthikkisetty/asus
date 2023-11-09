@@ -6,7 +6,7 @@ metadata:
     app: kalayan
     env: dev
 spec:
-  containers:
+  containers:   
     - name: suresh 
       image: nginx:1.25
       ports:
