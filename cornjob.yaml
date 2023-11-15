@@ -9,17 +9,17 @@ spec:
   jobTemplate: 
     metadata:
       labels:
-        name: pavanlabel.yaml
+        purpose: jobs
     spec:    
       backoffLimit: 3
       template:
         metadata:
           labels: 
-            name: kalayanlabel.yaml 
+            purpose: batch
         spec:
           containers:
             - name: babu
               image: alpine    
               command:
                 - sleep
-                  1d
+                - 1d
