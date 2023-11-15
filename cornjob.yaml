@@ -1,14 +1,13 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: cronjob
+  name: cron
   labels: 
     purpose: job
 spec:
   schedule: "*/5 * * * *"
   jobTemplate: 
     metadata:
-      name: pavan
       labels:
         name: pavanlabel.yaml
     spec:    
