@@ -5,6 +5,9 @@ metadata:
   labels: 
     name: acflabel.yaml
 spec:
+  schedule: "*/5 * * * *"
+  jobTemplate: no
+    metadata: no
   selector:
     matchLabels: pavan
     template:
