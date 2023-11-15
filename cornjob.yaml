@@ -11,16 +11,17 @@ spec:
       name: pavan
       labels:
         name: pavanlabel.yaml
-    backoffLimit: 3
-    template:
-      metadata:
-        name: kalayan
-        labels: 
-          name: kalayanlabel.yaml 
-      spec:
-        containers:
-          - name: babu
-            image: nginx:1.25    
-            ports:
-              - containerPort: 80
-                protocol: TCP 
+    spec:    
+      backoffLimit: 3
+        template:
+          metadata:
+            name: kalayan
+            labels: 
+              name: kalayanlabel.yaml 
+          spec:
+            containers:
+              - name: babu
+                image: nginx:1.25    
+                ports:
+                  - containerPort: 80
+                    protocol: TCP 
