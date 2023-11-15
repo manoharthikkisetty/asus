@@ -3,15 +3,12 @@ kind: CronJob
 metadata:
   name: acf
   labels: 
-    name: acflabel.yaml
+    purpose: job
 spec:
   schedule: "*/5 * * * *"
-  jobTemplate: NO
-    metadata: NO
+  jobTemplate: 
+    metadata: 
     backoffLimit: 3
-  selector:
-    matchLabels: 
-      name: pavanlabel.yaml
     template:
       metadata:
         name: kalayan
