@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: acf
+  name: cronjob
   labels: 
     purpose: job
 spec:
@@ -15,7 +15,6 @@ spec:
       backoffLimit: 3
       template:
         metadata:
-          name: kalayan
           labels: 
             name: kalayanlabel.yaml 
         spec:
