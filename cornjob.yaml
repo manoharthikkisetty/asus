@@ -7,7 +7,10 @@ metadata:
 spec:
   schedule: "*/5 * * * *"
   jobTemplate: 
-    metadata: 
+    metadata:
+      name: pavan
+      labels:
+        name: pavanlabel.yaml
     backoffLimit: 3
     template:
       metadata:
