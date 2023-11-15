@@ -2,7 +2,8 @@ apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: acf
-  labels: acflabel.yaml
+  labels: 
+    name: acflabel.yaml
 spec:
   selector:
     matchLabels: pavan
