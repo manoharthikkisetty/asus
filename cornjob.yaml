@@ -22,4 +22,5 @@ spec:
               image: alpine    
               command:
                 - sleep
-                - 1d
+                - 1d\
+          restartPolicy: OnFailure      
