@@ -21,7 +21,7 @@ spec:
         spec:
           containers:
             - name: babu
-              image: nginx:1.25    
-              ports:
-                - containerPort: 80
-                  protocol: TCP 
+              image: alpine    
+              command:
+                - sleep
+                  1d
