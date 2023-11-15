@@ -6,10 +6,12 @@ metadata:
     name: acflabel.yaml
 spec:
   schedule: "*/5 * * * *"
-  jobTemplate: no
-    metadata: no
+  jobTemplate: NO
+    metadata: NO
+    backoffLimit: 3
   selector:
-    matchLabels: pavan
+    matchLabels: 
+      name: pavanlabel.yaml
     template:
       metadata:
         name: kalayan
