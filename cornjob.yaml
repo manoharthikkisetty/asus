@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: acf
+  labels: acflabel.yaml
+spec:
+  selector:
+    matchLabels: pavan
+    template:
+      metadata:
+        name: kalayan
+        labels: kalayanlabel.yaml 
+      spec:
+        containers:
+          - name: babu
+            image: nginx:1.25    
+            ports:
+              - containerPort: 80
+                protocol: TCP 
