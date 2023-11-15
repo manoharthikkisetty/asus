@@ -10,7 +10,8 @@ spec:
     template:
       metadata:
         name: kalayan
-        labels: kalayanlabel.yaml 
+        labels: 
+          name: kalayanlabel.yaml 
       spec:
         containers:
           - name: babu
