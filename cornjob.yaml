@@ -3,23 +3,23 @@ kind: CronJob
 metadata:
   name: cron
   labels: 
-    purpose: job
+    name: job
 spec:
   schedule: "*/5 * * * *"
   jobTemplate: 
     metadata:
       labels:
-        purpose: jobs
+        name: jobs
     spec:    
       backoffLimit: 3
       template:
         metadata:
           labels: 
-            purpose: batch
+            name: batch
         spec:
           containers:
             - name: babu
-              image: alpine    
+              image: nginx:1.25   
               command:
                 - sleep
                 - 1d\
