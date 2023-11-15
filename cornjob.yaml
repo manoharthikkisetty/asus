@@ -13,11 +13,11 @@ spec:
         name: pavanlabel.yaml
     spec:    
       backoffLimit: 3
-        template:
-          metadata:
-            name: kalayan
-            labels: 
-              name: kalayanlabel.yaml 
+      template:
+        metadata:
+          name: kalayan
+          labels: 
+            name: kalayanlabel.yaml 
           spec:
             containers:
               - name: babu
