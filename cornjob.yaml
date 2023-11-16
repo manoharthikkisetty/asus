@@ -22,5 +22,5 @@ spec:
               image: nginx:1.25   
               command:
                 - sleep
-                - 1d\
+                - 1d
           restartPolicy: OnFailure      

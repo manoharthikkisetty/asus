@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  labels: varunlabel
+spec:
+  minReadySeconds: 2
+  replicas: 3
+  selector:
+    matchLabels:
+      name: varunlabel
+    template:
+      metadata:
+        labels: varun
+    spec:
+      containers:
+        - name: asus
+          image: nginx:1.25
+          ports:
+            containerPort: 80
+            protocol: TCP      
