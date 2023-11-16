@@ -11,10 +11,10 @@ spec:
     matchLabels:
       name: varunlabel
   template:
-      metadata:
+    metadata:
         labels:
           name: varun 
-  spec:
+    spec:
       containers:
         - name: asus
           image: nginx:1.25
