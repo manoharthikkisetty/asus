@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   labels:
-    name: varunlabel
+    name: varun
 spec:
   minReadySeconds: 2
   replicas: 3
