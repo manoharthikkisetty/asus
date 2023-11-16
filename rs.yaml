@@ -19,6 +19,6 @@ spec:
         - name: asus
           image: nginx:1.25
           ports:
-            containerPort: 80
-            protocol: TCP      
+            - containerPort: 80
+              protocol: TCP      
             
