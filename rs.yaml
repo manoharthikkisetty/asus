@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  labels: varunlabel
+  labels:
+    name: varunlabel
 spec:
   minReadySeconds: 2
   replicas: 3
@@ -10,7 +11,8 @@ spec:
       name: varunlabel
     template:
       metadata:
-        labels: varun
+        labels:
+          name: varun 
     spec:
       containers:
         - name: asus
