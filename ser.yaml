@@ -9,7 +9,7 @@ spec:
   selector:
     name: toomuch
   ports:
-    - nodePort: 33334
+    - nodePort: 32334
       port: 8080
       targetPort: 8080
          
