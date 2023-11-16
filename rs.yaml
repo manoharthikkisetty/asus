@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
         labels:
-          name: varun 
+          name: varunlabel 
     spec:
       containers:
         - name: asus
