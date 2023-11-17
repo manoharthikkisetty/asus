@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -23,17 +22,4 @@ spec:
             - containerPort: 80
               protocol: TCP
 
----
-apiVersion: 	v1
-kind: Service
-metadata:
-  name: ram
-  labels:
-    name: shop  
-spec:
-  selector:
-    name: plain
-    type: ClusterIP
-  ports:
-    - port: 80
-      targetPort: 80            
+            

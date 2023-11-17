@@ -1,3 +1,29 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: varun
+  labels: 
+    name: varunlabel
+spec:
+  minReadySeconds: 5
+  replicas: 3
+  selector:
+    matchLabels:
+      name: varunlabel
+  template:
+    metadata:
+        labels:
+          name: varunlabel 
+    spec:
+      containers:
+        - name: asus
+          image: nginx:1.25
+          ports:
+            - containerPort: 80
+              protocol: TCP
+
+---            
 apiVersion: 	v1
 kind: Service
 metadata:
@@ -10,4 +36,4 @@ spec:
   type: ClusterIP
   ports:
     - port: 80
-      targetPort: 33333  
+      targetPort: 80 
