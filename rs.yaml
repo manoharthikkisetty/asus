@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
@@ -20,5 +21,19 @@ spec:
           image: nginx:1.25
           ports:
             - containerPort: 80
-              protocol: TCP      
-            
+              protocol: TCP
+
+---
+apiVersion: 	v1
+kind: Service
+metadata:
+  name: ram
+  labels:
+    name: shop  
+spec:
+  selector:
+    name: plain
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 33333            
