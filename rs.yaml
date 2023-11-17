@@ -35,4 +35,4 @@ spec:
     name: plain
   ports:
     - port: 80
-      targetPort: 33333            
+      targetPort: 80            
