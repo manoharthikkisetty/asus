@@ -5,7 +5,7 @@ metadata:
   labels:
     name: toomuch
 spec:
-  type: NodePort
+  type: clusterIP
   selector:
     name: toomuch
   ports:
