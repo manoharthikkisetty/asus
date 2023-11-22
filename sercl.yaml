@@ -12,4 +12,16 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: ClusterIP    
+  type: ClusterIP
+
+--- 
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: my-service-endpoints
+subsets:
+  - addresses:
+      - ip: 10.244.1.70 # Replace with the actual IP addresses of your pods
+    ports:
+      - port: 80           # Replace with the port number your service is listening on
+        name: http
