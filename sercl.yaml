@@ -21,7 +21,9 @@ metadata:
   name: my-service-endpoints
 subsets:
   - addresses:
-      - ip: 10.101.25.73# Replace with the actual IP addresses of your pods
+      - ip: 10.244.1.70
+      - ip: 10.244.1.73
+      - ip: 10.244.1.72 # Replace with the actual IP addresses of your pods
     ports:
       - port: 80           # Replace with the port number your service is listening on
         name: http
