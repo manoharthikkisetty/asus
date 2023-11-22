@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sai
+  name: varunlabel
   labels:
     name: toomuch
 spec:
@@ -10,6 +10,6 @@ spec:
     name: toomuch
   ports:
     - nodePort: 32334
-      port: 8080
-      targetPort: 8080
+      port: 80
+      targetPort: 80
          
