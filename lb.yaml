@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: varun
+  labels:
+    name: varunlabel
+spec:
+  type: LoadBalancer
+  selector:
+    name: varunlabel
+  ports:
+    - nodePort: 32334
+      port: 80
+      targetPort: 80

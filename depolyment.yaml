@@ -23,5 +23,7 @@ spec:
           image: shaikkhajaibrahim/nopcommerceaug23
           ports:
             - containerPort: 80
-              protocol: TCP    
+              protocol: TCP 
+
+
         
