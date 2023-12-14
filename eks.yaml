@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: eks-cluster
-  region: us-east-1
+  region: us-west-2
 
 nodeGroups:
   - name: ng-1
